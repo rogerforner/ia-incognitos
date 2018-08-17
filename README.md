@@ -41,7 +41,7 @@ Incògnitos incorpora código de **Advanced Custom Fields Pro**, un plugin de Wo
 
 #### Útil
 
-Si se desea integrar ACF Pro directamente en el tema, inserta el directorio del plugin dentro de _incognitos/plugins/acf/_. Con ello debería funcionarte todo de forma correcta dado que, si te fijas en el _.gitignore_, verás que así trabajamos nosotros :)
+Integra ACF Pro directamente en el tema, inserta el directorio del plugin dentro de _incognitos/plugins/acf/_. Con ello debería funcionarte todo de forma correcta dado que, si te fijas en el _.gitignore_, verás que así trabajamos nosotros :)
 
 # Requisitos
 

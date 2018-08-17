@@ -1,0 +1,946 @@
+[
+    {
+        "key": "group_5b3b1b84be484",
+        "title": "Legal - RGPD",
+        "fields": [
+            {
+                "key": "field_5b3b21613f0e6",
+                "label": "Responsable",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3b2259511ec",
+                "label": "Datos de contacto del Responsable",
+                "name": "responsable",
+                "type": "group",
+                "instructions": "Persona\/Empresa responsable del tratamiento de los datos.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3b23811c117",
+                        "label": "Identidad",
+                        "name": "identidad",
+                        "type": "text",
+                        "instructions": "Nombre completo.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b24111c118",
+                        "label": "ID",
+                        "name": "id",
+                        "type": "text",
+                        "instructions": "Identificador. Por ejemplo el NIF o el NIE o el CIF o etc.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b24eaa1769",
+                        "label": "Dirección postal",
+                        "name": "direccion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b255aa176a",
+                        "label": "Teléfono",
+                        "name": "telefono",
+                        "type": "number",
+                        "instructions": "Utilice el <a target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https:\/\/es.wikipedia.org\/wiki\/Anexo:Prefijos_telef%C3%B3nicos_mundiales\">prefijo telefónico<\/a> (+).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "+",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_5b3b2587a176b",
+                        "label": "Correo electrónico",
+                        "name": "email",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b2ca25b441",
+                "label": "Datos de contacto del Representante",
+                "name": "responsableRepresentante",
+                "type": "group",
+                "instructions": "Persona\/Empresa responsable del tratamiento de los datos dentro de la Unión Europea; en el caso de que el <strong>Responsable<\/strong> resida fuera de ésta.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3b284a9162b",
+                        "label": "El responsable reside fuera de la Unión Europea?",
+                        "name": "representante",
+                        "type": "radio",
+                        "instructions": "Si la persona\/empresa reside fuera de la Unión Europea es necesario un\/na representante que resida en ésta.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "true": "Sí",
+                            "false": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "false",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_5b3b280791626",
+                        "label": "Identidad",
+                        "name": "identidad",
+                        "type": "text",
+                        "instructions": "Nombre completo.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b284a9162b",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b280791627",
+                        "label": "ID",
+                        "name": "id",
+                        "type": "text",
+                        "instructions": "Identificador. Por ejemplo el NIF o el NIE o el CIF o etc.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b284a9162b",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b280791628",
+                        "label": "Dirección postal",
+                        "name": "direccion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b284a9162b",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b280791629",
+                        "label": "Teléfono",
+                        "name": "telefono",
+                        "type": "number",
+                        "instructions": "Utilice el <a target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https:\/\/es.wikipedia.org\/wiki\/Anexo:Prefijos_telef%C3%B3nicos_mundiales\">prefijo telefónico<\/a> (+).",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b284a9162b",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "+",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_5b3b28079162a",
+                        "label": "Correo electrónico",
+                        "name": "email",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b284a9162b",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b2e3bb1f83",
+                "label": "Datos de contacto del Delegado de Protección de Datos",
+                "name": "responsableDpd",
+                "type": "group",
+                "instructions": "Persona\/Empresa responsable de informar, asesorar, supervisar y cooperar con la autoridad de control, así como ser el punto de contacto para los\/las interesados\/das.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3b2f32b1f90",
+                        "label": "El responsable hace el papel del DPD?",
+                        "name": "dpd",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "true": "Sí",
+                            "false": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "true",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_5b3b2e3bb1f84",
+                        "label": "Identidad",
+                        "name": "identidad",
+                        "type": "text",
+                        "instructions": "Nombre completo.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b2f32b1f90",
+                                    "operator": "==",
+                                    "value": "false"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b4065fb1ac",
+                        "label": "Dirección postal",
+                        "name": "direccion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b2f32b1f90",
+                                    "operator": "==",
+                                    "value": "false"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3b2e3bb1f88",
+                        "label": "Correo electrónico",
+                        "name": "email",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b3b2f32b1f90",
+                                    "operator": "==",
+                                    "value": "false"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b21ec3f0e7",
+                "label": "Finalidad",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3b3bc87d21c",
+                "label": "Importante",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "El <em>Reglamento General de Protección de Datos<\/em> aclara que la información proporcionada debe utilizar un lenguaje claro, conciso y comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o términos ambiguos con escaso sentido para las personas destinatarias.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3b9fa40d188",
+                "label": "Listado",
+                "name": "finalidadListado",
+                "type": "repeater",
+                "instructions": "Los datos serán recogidos exclusivamente para fines determinados, explícitos y legítimos, y no serán tratados ulteriormente de manera incompatible con dichos fines.\r\n<hr>\r\n<strong>Constará de<\/strong>:\r\n<ol>\r\n<li>Descripción de los fines del tratamiento.<\/li>\r\n<li>Plazos o criterios de conservación de los datos.<\/li>\r\n<li>Decisiones automatizadas, perfiles y lógica aplicada.<\/li>\r\n<\/ol>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b3ba0270d189",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Añadir Finalidad",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3ba0270d189",
+                        "label": "Título",
+                        "name": "titulo",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3ba03f0d18a",
+                        "label": "Descripción",
+                        "name": "descripcion",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 0,
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b21f43f0e8",
+                "label": "Legitimación",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3b417758aa4",
+                "label": "Importante",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "El <em>Reglamento General de Protección de Datos<\/em> aclara que la información proporcionada debe utilizar un lenguaje claro, conciso y comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o términos ambiguos con escaso sentido para las personas destinatarias.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3ce8c8a2ab5",
+                "label": "Listado",
+                "name": "legitimacionListado",
+                "type": "repeater",
+                "instructions": "Base jurídica en la cual se basa el tratamiento de los datos.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b3ceac0a2ab8",
+                "min": 0,
+                "max": 5,
+                "layout": "block",
+                "button_label": "Añadir Tipo Legitimación",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3ceac0a2ab8",
+                        "label": "Legitimación por",
+                        "name": "legitimacionTipo",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "consentimiento": "consentimiento del interesado",
+                            "contrato": "ejecución de un contrato",
+                            "interes": "Interés legítimo del Responsable, o de un tercero",
+                            "legal": "cumplimiento de una obligación legal",
+                            "publico": "misión en Interés público o ejercicio de Poderes Públicos"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5b3cec7e1f0c7",
+                        "label": "Legitimación",
+                        "name": "legitimacion",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_5b3cecf51f0c8",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "row",
+                        "button_label": "Añadir Legitimación",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b3cecf51f0c8",
+                                "label": "Título",
+                                "name": "titulo",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b3cec19fc064",
+                                "label": "Descripción",
+                                "name": "descripcion",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 0,
+                                "delay": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b22033f0e9",
+                "label": "Destinatarios",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3b418158aa5",
+                "label": "Importante",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "El <em>Reglamento General de Protección de Datos<\/em> aclara que la información proporcionada debe utilizar un lenguaje claro, conciso y comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o términos ambiguos con escaso sentido para las personas destinatarias.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3cef1ab8d46",
+                "label": "Listado",
+                "name": "destinatariosListado",
+                "type": "repeater",
+                "instructions": "Cuando se haya previsto ceder o comunicar, legítimamente, los datos personales que se recogen, se informará acerca de la identidad de los destinatarios.\r\n<hr>\r\n<strong>Los destinatarios pueden ser<\/strong>:\r\n<ol>\r\n<li>Empresas a las cuales de les contrate un servicio de alojamiento web, bases de datos, etc.<\/li>\r\n<li>Empresas a las cuales se les contrate un servicio de análisis web, publicidad, etc.<\/li>\r\n<li>Cualquier empresa a la que se le contrate un servicio a través del cual, sea de forma digital o física, se le proporcionen los datos de los usuarios.<\/li>\r\n<\/ol>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b3cef1ab8d47",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Añadir Destinatario",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3cef1ab8d47",
+                        "label": "Nombre",
+                        "name": "nombre",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b3cef7ab8d49",
+                        "label": "URL del sitio web del\/la destinatario\/ria",
+                        "name": "url",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "https:\/\/"
+                    },
+                    {
+                        "key": "field_5b3cef1ab8d48",
+                        "label": "Descripción",
+                        "name": "descripcion",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 0,
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3b22103f0ea",
+                "label": "Derechos",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3b418c58aa6",
+                "label": "Importante",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "El <em>Reglamento General de Protección de Datos<\/em> aclara que la información proporcionada debe utilizar un lenguaje claro, conciso y comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o términos ambiguos con escaso sentido para las personas destinatarias.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3cf6658f9e9",
+                "label": "Listado",
+                "name": "derechosListado",
+                "type": "repeater",
+                "instructions": "Se deberá ofrecer la información sobre los derechos que le asisten a las personas interesadas, en relación con el Responsable, de acuerdo con el RGPD.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b3cf6658f9ea",
+                "min": 0,
+                "max": 5,
+                "layout": "block",
+                "button_label": "Añadir Derecho",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3cf6658f9ea",
+                        "label": "Derecho a",
+                        "name": "derecho",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "acceso": "solicitar el acceso a los datos personales relativos al interesado",
+                            "rectificacion": "solicitar su rectificación o supresión",
+                            "limitacion": "solicitar la limitación de su tratamiento",
+                            "oposicion": "oponerse al tratamiento",
+                            "portabilidad": "la portabilidad de los datos"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5b3cf6658f9ed",
+                        "label": "Descripción",
+                        "name": "descripcion",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 0,
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5b3cfa3c79b3f",
+                "label": "Procedencia",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b3cfa4c79b40",
+                "label": "Importante",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "El <em>Reglamento General de Protección de Datos<\/em> aclara que la información proporcionada debe utilizar un lenguaje claro, conciso y comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o términos ambiguos con escaso sentido para las personas destinatarias.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3cfa6d79b41",
+                "label": "Descripción",
+                "name": "procedenciaDescripcion",
+                "type": "wysiwyg",
+                "instructions": "La procedencia de los datos únicamente habrá de incluirse en el supuesto de que los datos personales no se hayan obtenido del interesado, por proceder de alguna cesión legítima, o de fuentes de acceso público.\r\n<hr>\r\n<strong>Los medios desde los que se hayan obtenido los datos pueden ser<\/strong>:\r\n<ol>\r\n<li>Correo postal.<\/li>\r\n<li>Correo electrónico.<\/li>\r\n<li>Mensajería instantánea.<\/li>\r\n<li>Entre otros.<\/li>\r\n<\/ol>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-rgpd"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
