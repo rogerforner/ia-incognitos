@@ -92,5 +92,7 @@ Es necesario disponer de:
 
 ## Permisos (capabilities)
 
+El/La usuario/ria administrador/ra dispone de las siguientes capacidades una vez activado el tema.
+
 - ``manage_acf``: Necesario para interactuar con ACF Pro.
 - ``manage_acf_legal``: Necesario para interactuar con los textos legales y el aviso de cookies.

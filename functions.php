@@ -8,7 +8,8 @@
 > Plugins
 > ACF Pro
 > Configuración del tema
-> 
+> Roles y Permisos
+>
 */
 
 /*
@@ -58,3 +59,12 @@ require_once get_stylesheet_directory() . '/inc/aPanel.php';
 require_once get_stylesheet_directory() . '/inc/web.php';
 require_once get_stylesheet_directory() . '/inc/webLogin.php';
 require_once get_stylesheet_directory() . '/inc/webNavigation.php';
+
+/*
+| ------------------------------------------------------------------------------
+| Roles y Permisos
+| ------------------------------------------------------------------------------
+| Código utilizado para proporcionar nuevos permisos (capacidades) a los roles.
+|
+*/
+require_once get_stylesheet_directory() . '/inc/users/administrator.php';
