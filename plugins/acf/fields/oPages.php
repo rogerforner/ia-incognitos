@@ -1,6 +1,17 @@
 <?php
 
 /*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> TABLA DE CONTENIDOS
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> Menús de administración
+> Páginas de opciones de los "Textos legales"
+> Página de opciones de la "Página de Información del Sitio"
+> Página de opciones de la "Página de Inicio de Sesión"
+> 
+*/
+
+/*
 | ------------------------------------------------------------------------------
 | Menús de administración
 | ------------------------------------------------------------------------------

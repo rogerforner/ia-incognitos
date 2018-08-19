@@ -1,6 +1,16 @@
 <?php
 
 /*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> TABLA DE CONTENIDOS
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> Página del Horario + Redes Sociales
+> Horario
+> Redes Sociales
+> 
+*/
+
+/*
 | ------------------------------------------------------------------------------
 | Página del Horario + Redes Sociales
 | ------------------------------------------------------------------------------
@@ -96,6 +106,33 @@ add_shortcode('info_horarioGeneral', 'shortInfoHorarioGeneral');
 | Redes Sociales
 | ------------------------------------------------------------------------------
 | Shortcodes utilizados para mostrar las redes sociales.
+| - 500px
+| - Bitbucket
+| - DeviantArt
+| - Facebook
+| - Flickr
+| - GitHub
+| - GitLab
+| - Google Plus
+| - Instagram
+| - Kikstarter
+| - Linkedin
+| - Meetup
+| - Pinterest
+| - RSS
+| - Sina Weibo
+| - Snapchat
+| - SoundCloud
+| - Spotify
+| - Steam
+| - TripAdvisor
+| - Twitch
+| - Twitter
+| - Viadeo
+| - Vimeo
+| - vkontakte
+| - Xing
+| - YouTube
 |
 */
 
