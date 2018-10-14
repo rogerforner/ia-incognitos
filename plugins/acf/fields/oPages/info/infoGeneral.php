@@ -46,10 +46,39 @@ function shortInfoHorarioGeneral() {
                 the_row();
     
                 // Campos ACF.
-                $dia         = get_sub_field('generalDia');
+                // Días de las semana.
+                $diaValor = get_sub_field('generalDia');
+                $dia      = "";
+                switch ($diaValor) {
+                    case 'lunes':
+                        $dia = __('Lunes', 'incognitos');
+                        break;
+                    case 'martes':
+                        $dia = __('Martes', 'incognitos');
+                        break;
+                    case 'miercoles':
+                        $dia = __('Miércoles', 'incognitos');
+                        break;
+                    case 'jueves':
+                        $dia = __('Jueves', 'incognitos');
+                        break;
+                    case 'viernes':
+                        $dia = __('Viernes', 'incognitos');
+                        break;
+                    case 'sabado':
+                        $dia = __('Sábado', 'incognitos');
+                        break;
+                    case 'domingo':
+                        $dia = __('Domingo', 'incognitos');
+                        break;
+                }
+                // Horas.
                 $deHora      = get_sub_field('generalDeHora');
                 $aHora       = get_sub_field('generalAHora');
                 $horario     = "$deHora - $aHora";
+                $deHoraT     = get_sub_field('generalDeHoraTarde');
+                $aHoraT      = get_sub_field('generalAHoraTarde');
+                $horarioT    = "$deHoraT - $aHoraT";
                 $cerrado     = get_sub_field('generalCerrado');
                 $cerradoDesc = get_sub_field('generalCerradoDescripcion');
                 $isCerrado   = "";
@@ -57,7 +86,11 @@ function shortInfoHorarioGeneral() {
                 if ($cerrado && in_array('true', $cerrado)) {
                     $isCerrado = '<span class="estado">'.$cerradoDesc.'</span>';
                 } else {
-                    $isCerrado = $horario;
+                    if (get_sub_field('generalDeHoraTarde')) {
+                        $isCerrado = "$horario<br>$horarioT";
+                    } else {
+                        $isCerrado = $horario;
+                    }
                 }
     
                 $salida .= '
@@ -82,6 +115,7 @@ function shortInfoHorarioGeneral() {
                 $deHora  = get_sub_field('cerradoDe');
                 $aHora   = get_sub_field('cerradoA');
                 $horario = "$deHora - $aHora";
+
 
                 $salida .= '
                     <tr>
