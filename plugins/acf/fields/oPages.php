@@ -57,7 +57,7 @@ if(function_exists('acf_add_options_page')) {
 		'page_title' => __('Información general del sitio web', 'incognitos'),
 		'menu_title' => __('Info. Sitio', 'incognitos'),
 		'menu_slug'  => 'ws-general-info',
-		'capability' => 'edit_theme_options',
+		'capability' => 'manage_acf_info',
 		'position'   => '3.1',
 		'icon_url'   => 'dashicons-info',
 		'redirect'   => false
@@ -69,7 +69,7 @@ if(function_exists('acf_add_options_page')) {
 		'page_title'  => __('Personalizar la página de Inicio de Sesión', 'incognitos'),
 		'menu_title'  => __('Login', 'incognitos'),
 		'parent_slug' => 'themes.php',
-		'capability'  => 'edit_theme_options'
+		'capability'  => 'manage_acf_login'
 	));
 }
 

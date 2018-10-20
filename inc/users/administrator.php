@@ -13,7 +13,9 @@ function userCapabilitiesAdministrator() {
     $role = get_role('administrator');
 
     // Capacidades.
-    $role->add_cap('manage_acf', true);
-    $role->add_cap('manage_acf_legal', true);
+    $role->add_cap('manage_acf');
+    $role->add_cap('manage_acf_legal');
+    $role->add_cap('manage_acf_info');
+    $role->add_cap('manage_acf_login');
 }
 add_action('init', 'userCapabilitiesAdministrator', 11);

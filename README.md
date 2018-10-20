@@ -1,16 +1,16 @@
 <!-- TOC -->
 
-- [Incògnitos](#inc%C3%B2gnitos)
+- [Incògnitos](#incògnitos)
     - [Tema padre](#tema-padre)
     - [Plugins](#plugins)
         - [ACF Pro](#acf-pro)
-            - [Útil](#%C3%BAtil)
+            - [Útil](#Útil)
 - [Requisitos](#requisitos)
 - [Mostrar datos](#mostrar-datos)
     - [Textos legales (shortcodes)](#textos-legales-shortcodes)
         - [Aviso legal](#aviso-legal)
-        - [RGPD: Reglamento General de Protección de Datos](#rgpd-reglamento-general-de-protecci%C3%B3n-de-datos)
-        - [Política de Cookies](#pol%C3%ADtica-de-cookies)
+        - [RGPD: Reglamento General de Protección de Datos](#rgpd-reglamento-general-de-protección-de-datos)
+        - [Política de Cookies](#política-de-cookies)
     - [Horario Laboral](#horario-laboral)
 - [Roles y Permisos](#roles-y-permisos)
     - [Permisos (capabilities)](#permisos-capabilities)
@@ -86,7 +86,7 @@ Es necesario disponer de:
 
 ## Horario Laboral
 
-- **Condiciones generales**: ``[info_horarioGeneral]``
+- **Horario (tabla)**: ``[info_horarioGeneral]``
 
 # Roles y Permisos
 
@@ -96,3 +96,5 @@ El/La usuario/ria administrador/ra dispone de las siguientes capacidades una vez
 
 - ``manage_acf``: Necesario para interactuar con ACF Pro.
 - ``manage_acf_legal``: Necesario para interactuar con los textos legales y el aviso de cookies.
+- ``manage_acf_info``: Necesario para insertar el horario laboral y las redes sociales.
+- ``manage_acf_login``: Necesario para interactuar con la personalización de la pagina de login.
