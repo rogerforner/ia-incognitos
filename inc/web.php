@@ -16,7 +16,6 @@
 | Quitar las meta etiquetas propias de WordPress que puedan dar demasiada info,
 | por seguridad.
 | - Versión de WP
-| - wlwmanifest
 | - Query strings
 |
 */
@@ -30,11 +29,6 @@ function webQuitarMetaVersion() {
 }
 add_filter('the_generator', 'webQuitarMetaVersion');
 
-// wlwmanifest
-// Utilizado para publicar con el editor "Windows Live Writer".
-// =============================================================================
-remove_action( 'wp_head', 'wlwmanifest_link');
-
 // Query strings
 // De "una-url/de-un-recurso?ver=4.4.2" a "una-url/de-un-recurso".
 // =============================================================================
@@ -44,6 +38,7 @@ function webQuitarQueryString($src){
 } 
 add_filter('script_loader_src', 'webQuitarQueryString', 15, 1); 
 add_filter('style_loader_src', 'webQuitarQueryString', 15, 1);
+
 
 /*
 | ------------------------------------------------------------------------------
