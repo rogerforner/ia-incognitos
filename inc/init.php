@@ -27,7 +27,7 @@ add_action('wp_enqueue_scripts', 'temaDivi');
 function temaLibreriasExternas() {
     wp_enqueue_style(
         'font-awesome',
-        'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+        'https://use.fontawesome.com/releases/v5.4.2/css/all.css'
     );
 }
 add_action('wp_enqueue_scripts', 'temaLibreriasExternas');
