@@ -4,17 +4,16 @@
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 > TABLA DE CONTENIDOS
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-> Limpiar el <head>
-> The Open Graph protocol
+> Modificar
+> Meta etiquetas
+> Feed
 > 
 */
 
 /*
 | ------------------------------------------------------------------------------
-| Limpiar el <head>
+| Modificar
 | ------------------------------------------------------------------------------
-| Quitar las meta etiquetas propias de WordPress que puedan dar demasiada info,
-| por seguridad.
 | - Versión de WP
 | - Query strings
 |
@@ -42,10 +41,9 @@ add_filter('style_loader_src', 'webQuitarQueryString', 15, 1);
 
 /*
 | ------------------------------------------------------------------------------
-| The Open Graph protocol
+| Meta etiquetas
 | ------------------------------------------------------------------------------
 | - Meta Tags & Open Graph
-| - Schema JSON-LD
 |
 */
 
@@ -91,8 +89,6 @@ function openGraph() {
 		$etiquetas = get_the_terms($post->ID, "project_tag");
 	}
 
-
-	
 	// MOSTRAR DATOS
 	// =========================================================================
 	echo '
@@ -130,34 +126,26 @@ function openGraph() {
 }
 add_action('wp_head', 'openGraph', 5);
 
-// Schema JSON-LD
-// =============================================================================
-function schemaJsonLD() {
-	global $post;
+/*
+| ------------------------------------------------------------------------------
+| Feed
+| ------------------------------------------------------------------------------
+| - Proyectos
+|
+*/
 
-	$nombreSitioWeb    = get_bloginfo('name');
-	$urlSitioWeb       = get_site_url();
-	$urlBuscarSitioWeb = get_search_link();
-
-	if (is_home() || is_front_page() || is_archive() || is_category() ||
-		is_tag() || is_tax() || is_search() || is_404() || is_date()) {
-		echo '
-		<script type="application/ld+json">
-		{
-			"@context": "http://schema.org/",
-			"@type": "WebSite",
-			"name": "'.$nombreSitioWeb.'",
-			"url": "'.$urlSitioWeb.'",
-			"potentialAction": {
-				"@type": "SearchAction",
-				"target": "'.$urlSitioWeb.'/?s={search_term_string}",
-				"query-input": "required name=search_term_string"
-			}
-		}
-		</script>
-		';
-	}
-
+function projectFeed() {
+	$posts          = array('project');
+	$nombreSitioWeb = get_bloginfo('name');
 	
+    foreach($posts as $post) {
+		$feed = get_post_type_archive_feed_link($post);
+		
+        if ($feed === '' || !is_string($feed)) {
+            $feed = get_bloginfo('rss2_url')."?post_type=$post";
+		}
+		
+        echo '<link rel="alternate" type="application/rss+xml" title="'.$nombreSitioWeb.' &raquo; Project Feed" href="'.$feed.'" />';
+    }
 }
-add_filter('wp_head', 'schemaJsonLD', 6);
+add_action('wp_head', 'projectFeed', 4);

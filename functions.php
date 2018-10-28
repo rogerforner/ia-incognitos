@@ -45,7 +45,8 @@ require_once get_stylesheet_directory() . '/plugins/acf/fields/oPages.php';
 | ------------------------------------------------------------------------------
 | Código utilizado para personalizar WordPress.
 | - Panel de administración
-| - Web
+| - HTML
+| - Shortcodes
 |
 */
 
@@ -53,8 +54,11 @@ require_once get_stylesheet_directory() . '/plugins/acf/fields/oPages.php';
 // =============================================================================
 require_once get_stylesheet_directory() . '/inc/aPanel.php';
 
-// Web
+// HTML
 // =============================================================================
-require_once get_stylesheet_directory() . '/inc/web.php';
-require_once get_stylesheet_directory() . '/inc/webLogin.php';
-require_once get_stylesheet_directory() . '/inc/webNavigation.php';
+require_once get_stylesheet_directory() . '/inc/html/head.php';
+require_once get_stylesheet_directory() . '/inc/html/login.php';
+
+// Shortcodes
+// =============================================================================
+require_once get_stylesheet_directory() . '/inc/shortcodes/menusNav.php';
