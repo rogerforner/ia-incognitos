@@ -132,28 +132,32 @@ add_action('wp_head', 'openGraph', 5);
 
 // Schema JSON-LD
 // =============================================================================
-function openGraphHtmlOut() {
-	if( is_single() ) {
-		$cpt = "Article";
+function schemaJsonLD() {
+	global $post;
 
-	} elseif ( is_author() ) {
-		$cpt = 'Person';
+	$nombreSitioWeb    = get_bloginfo('name');
+	$urlSitioWeb       = get_site_url();
+	$urlBuscarSitioWeb = get_search_link();
 
-	} elseif ( is_attachment() ) {
-		$cpt = 'MediaObject';
-
-	} elseif ( is_search() || is_category() || is_tag() || is_tax() || is_date() ) {
-		$cpt = 'SearchResultsPage';
-
-	} elseif ( is_archive() ) {
-		$cpt = 'ItemList';
-
-	}  else {
-		$cpt = 'WebPage';
+	if (is_home() || is_front_page() || is_archive() || is_category() ||
+		is_tag() || is_tax() || is_search() || is_404() || is_date()) {
+		echo '
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "WebSite",
+			"name": "'.$nombreSitioWeb.'",
+			"url": "'.$urlSitioWeb.'",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "'.$urlSitioWeb.'/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
+		';
 	}
 
-	$codigoIdioma = get_bloginfo('language');
-
-    return 'lang="'.$codigoIdioma.'" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/'.$cpt.'"';
+	
 }
-add_filter('language_attributes', 'openGraphHtmlOut');
+add_filter('wp_head', 'schemaJsonLD', 6);
