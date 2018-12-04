@@ -6,7 +6,6 @@
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 > Instalación del tema
 > Plugins
-> ACF Pro
 > Configuración del tema
 >
 */
