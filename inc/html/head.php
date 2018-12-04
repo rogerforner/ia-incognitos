@@ -153,14 +153,26 @@ function jsonldWebSite() {
 	}
 
 	if ($datos['datosNombreAlternativo']) {
-		$nombreSitioAlt = '"alternateName": "'.$datos['datosNombreAlternativo'].'",';
+		$nombreSitioAlt = '"alternateName": "'.addslashes($datos['datosNombreAlternativo']).'",';
 	} else {
 		$nombreSitioAlt = "";
 	}
 
 	$redes  = "";
 
-	echo '<script type="application/ld+json">{"@context": "http://schema.org/","@type": "WebSite","@id": "'.$urlSitio.'#website","url": "'.$urlSitio.'","name": "'.$nombreSitio.'",'.$nombreSitioAlt.'"potentialAction": {"@type": "SearchAction","target": "'.$urlSitio.'?s={search_term_string}","query-input": "required name=search_term_string"}}</script>';
+	echo '<script type="application/ld+json">{
+        "@context": "http://schema.org/",
+        "@type": "WebSite",
+        "@id": "'.$urlSitio.'#website",
+        "url": "'.$urlSitio.'",
+        "name": "'.addslashes($nombreSitio).'",
+        '.$nombreSitioAlt.'
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "'.$urlSitio.'?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }</script>';
 }
 add_action('wp_head', 'jsonldWebSite', 5);
 
@@ -410,12 +422,20 @@ function jsonldTipo() {
         get_field('xing', 'option') ||
         get_field('youtube', 'option')
     ) {
-        $sameAs = '"sameAs": ['.$redes.']';
+        $sameAs = '"sameAs": ['.rtrim($redes, ',').']';
     }
 
 	// SALIDA
     // -------------------------------------------------------------------------
-	echo '<script type="application/ld+json">{"@context": "http://schema.org/","@type": "'.$schemaType.'","@id": "'.$urlSitio.'#'.strtolower($schemaType).'","url": "'.$urlSitio.'","name": "'.$nombreSitio.'",'.$logoSitio.''.$sameAs.'}</script>';
+	echo '<script type="application/ld+json">{
+        "@context": "http://schema.org/",
+        "@type": "'.$schemaType.'",
+        "@id": "'.$urlSitio.'#'.strtolower($schemaType).'",
+        "url": "'.$urlSitio.'",
+        "name": "'.addslashes($nombreSitio).'",
+        '.$logoSitio.'
+        '.$sameAs.'
+    }</script>';
 }
 add_action('wp_head', 'jsonldTipo', 5);
 
@@ -472,7 +492,24 @@ function jsonldBlogPosting() {
 	}
 
 	if (is_singular("post") || is_singular("project")) {
-		echo '<script type="application/ld+json">{"@context": "http://schema.org","@type": "BlogPosting","@id": "'.$urlSitio.'#blogposting","headline": "'.$descripcion.'",'.$imagePostCode.'"datePublished": "'.$publishedDate.'","dateModified": "'.$modifiedDate.'","author": {"@type": "Person","name": "'.$autor.'"},"publisher": {"@type": "'.$schemaType.'","name": "'.$nombreSitio.'",'.$logoSitio.'}}</script>';
+		echo '<script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "@id": "'.$urlSitio.'#blogposting",
+            "headline": "'.addslashes($descripcion).'",
+            '.$imagePostCode.'
+            "datePublished": "'.$publishedDate.'",
+            "dateModified": "'.$modifiedDate.'",
+            "author": {
+                "@type": "Person",
+                "name": "'.addslashes($autor).'"
+            },
+            "publisher": {
+                "@type": "'.$schemaType.'",
+                "name": "'.addslashes($nombreSitio).'",
+                '.$logoSitio.'
+            }
+        }</script>';
 	}
 }
 add_action('wp_head', 'jsonldBlogPosting', 5);
