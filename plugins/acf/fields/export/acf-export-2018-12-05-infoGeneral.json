@@ -1,0 +1,912 @@
+[
+    {
+        "key": "group_5b75935c64e29",
+        "title": "Información general",
+        "fields": [
+            {
+                "key": "field_5c06acd10b8bf",
+                "label": "Datos",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5c06ad3b0b8c1",
+                "label": "",
+                "name": "datos",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5c06ada20b8c3",
+                        "label": "Código Schema",
+                        "name": "datosSchema",
+                        "type": "text",
+                        "instructions": "Puedes ver los códigos en <a href=\"https:\/\/schema.org\/docs\/full.html\" target=\"_blank\" rel=\"noopener noreferrer\">schema.org<\/a>.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Person, Organization, Dentist...",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5c06ad5e0b8c2",
+                        "label": "Nombre",
+                        "name": "datosNombre",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5c06ace60b8c0",
+                        "label": "Nombre alternativo",
+                        "name": "datosNombreAlternativo",
+                        "type": "text",
+                        "instructions": "Si dispones de uno, introduce un nombre alternativo",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5c06ae930b8c4",
+                        "label": "Logo",
+                        "name": "datosLogo",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5b7593c4ac9fe",
+                "label": "Horario",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b759aeecfe40",
+                "label": "Estado",
+                "name": "infoHorarioEstado",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "abierto": "Abierto",
+                    "cerrado": "Cerrado"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "abierto",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5b7595e9fae15",
+                "label": "Horario laboral",
+                "name": "infoHorarioGeneral",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b759aeecfe40",
+                            "operator": "==",
+                            "value": "abierto"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b75964efae16",
+                "min": 0,
+                "max": 7,
+                "layout": "block",
+                "button_label": "Insertar día",
+                "sub_fields": [
+                    {
+                        "key": "field_5b75964efae16",
+                        "label": "Día de la semana",
+                        "name": "generalDia",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "lunes": "Lunes",
+                            "martes": "Martes",
+                            "miercoles": "Miércoles",
+                            "jueves": "Jueves",
+                            "viernes": "Viernes",
+                            "sabado": "Sábado",
+                            "domingo": "Domingo"
+                        },
+                        "default_value": [
+                            "lunes"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5b7596f4fae17",
+                        "label": "de",
+                        "name": "generalDeHora",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b759e1520d08",
+                                    "operator": "!=",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "12",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "g:i a",
+                        "return_format": "g:i a"
+                    },
+                    {
+                        "key": "field_5b759735fae18",
+                        "label": "a",
+                        "name": "generalAHora",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b759e1520d08",
+                                    "operator": "!=",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "12",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "g:i a",
+                        "return_format": "g:i a"
+                    },
+                    {
+                        "key": "field_5bb7832e22a53",
+                        "label": "y de",
+                        "name": "generalDeHoraTarde",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b759e1520d08",
+                                    "operator": "!=",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "12",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "g:i a",
+                        "return_format": "g:i a"
+                    },
+                    {
+                        "key": "field_5bb7833a22a54",
+                        "label": "a",
+                        "name": "generalAHoraTarde",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b759e1520d08",
+                                    "operator": "!=",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "12",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "g:i a",
+                        "return_format": "g:i a"
+                    },
+                    {
+                        "key": "field_5b759e1520d08",
+                        "label": "¿Cerrado?",
+                        "name": "generalCerrado",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "true": "Sí"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "horizontal",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    },
+                    {
+                        "key": "field_5b76f23b22878",
+                        "label": "Descripción",
+                        "name": "generalCerradoDescripcion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b759e1520d08",
+                                    "operator": "==",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Cerrado",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5b759cccbe7bc",
+                "label": "Cerrado por",
+                "name": "infoHorarioCerrado",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b759aeecfe40",
+                            "operator": "==",
+                            "value": "cerrado"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5b759904a841f",
+                        "label": "Título",
+                        "name": "cerradoTitulo",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b759904a8420",
+                        "label": "de:",
+                        "name": "cerradoDe",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d\/m\/Y",
+                        "return_format": "d\/m\/Y",
+                        "first_day": 1
+                    },
+                    {
+                        "key": "field_5b759904a8421",
+                        "label": "a:",
+                        "name": "cerradoA",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d\/m\/Y",
+                        "return_format": "d\/m\/Y",
+                        "first_day": 1
+                    }
+                ]
+            },
+            {
+                "key": "field_5b759408ac9ff",
+                "label": "Redes Sociales",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b75a51b571d0",
+                "label": "500px",
+                "name": "500px",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a86bec1c0",
+                "label": "Bitbucket",
+                "name": "bitbucket",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a5ed571d3",
+                "label": "DeviantArt",
+                "name": "deviantart",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75abed0fb79",
+                "label": "Facebook",
+                "name": "facebook",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a4e246bf0",
+                "label": "Flickr",
+                "name": "flickr",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a83cec1bf",
+                "label": "GitHub",
+                "name": "gitHub",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a82cec1be",
+                "label": "GitLab",
+                "name": "gitLab",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75ac0e0fb7b",
+                "label": "Google Plus",
+                "name": "googlePlus",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a503571cf",
+                "label": "Instagram",
+                "name": "instagram",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a92aec1c1",
+                "label": "Kickstarter",
+                "name": "kickstarter",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a6fb571d9",
+                "label": "Linkedin",
+                "name": "linkedin",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a44c46bee",
+                "label": "Meetup",
+                "name": "meetup",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a535571d1",
+                "label": "Pinterest",
+                "name": "pinterest",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75ac260fb7c",
+                "label": "RSS",
+                "name": "rss",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a753571db",
+                "label": "Sina Weibo",
+                "name": "sinaWeibo",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a695571d7",
+                "label": "Snapchat",
+                "name": "snapchat",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b770481c3349",
+                "label": "SoundCloud",
+                "name": "soundcloud",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b7700b1c3348",
+                "label": "Spotify",
+                "name": "spotify",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75ab1d8f68a",
+                "label": "Steam",
+                "name": "steam",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a803ec1bd",
+                "label": "TripAdvisor",
+                "name": "tripAdvisor",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a9d3ec1c3",
+                "label": "Twitch",
+                "name": "twitch",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75abfe0fb7a",
+                "label": "Twitter",
+                "name": "twitter",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a6ce571d8",
+                "label": "Viadeo",
+                "name": "viadeo",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a688571d6",
+                "label": "Vimeo",
+                "name": "vimeo",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a9f3ec1c4",
+                "label": "Vkontakte",
+                "name": "vkontakte",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a72e571da",
+                "label": "Xing",
+                "name": "xing",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            },
+            {
+                "key": "field_5b75a678571d5",
+                "label": "YouTube",
+                "name": "youtube",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "ws-general-info"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

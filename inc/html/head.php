@@ -199,7 +199,7 @@ function jsonldTipo() {
 	}
 
 	if ($datos['datosLogo']) {
-		$logoSitio = '"logo": "'.$datos['datosLogo'].'",';
+		$logoSitio = '"logo": "'.$datos['datosLogo']['url'].'",';
 	} else {
 		$logoSitio = "";
 	}
@@ -438,81 +438,6 @@ function jsonldTipo() {
     }</script>';
 }
 add_action('wp_head', 'jsonldTipo', 5);
-
-// BlogPosting
-// =============================================================================
-function jsonldBlogPosting() {
-	global $post;
-
-	$autor           = get_author_name($post->post_author);
-	$descripcion     = "";
-	$publishedDate   = get_the_date('Y-m-d');
-	$modifiedDate    = get_the_modified_date('Y-m-d');
-	$imagePostObj    = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
-	$imagePostURL    = $imagePostObj[0];
-	$imagePostWidth  = $imagePostObj[1];
-	$imagePostHeight = $imagePostObj[2];
-	$imagePostCode   = "";
-
-	if ($imagePostObj) {
-		$imagePostCode = '"image": {"@type": "ImageObject","url": "'.$imagePostURL.'","width": '.$imagePostWidth.',"height": '.$imagePostHeight.'},';
-	} else {
-		$imagePostCode = "";
-	}
-
-	$schemaType  = "Organization";
-	$nombreSitio = "";
-	$urlSitio    = home_url('/');
-	$logoSitio   = "";
-
-	if (has_excerpt($post->ID)) {
-		$descripcion = get_the_excerpt();
-	} else {
-		$descripcion = get_bloginfo('description');
-	}
-
-	$datos = get_field('datos', 'option');
-
-	if ($datos['datosSchema']) {
-		$schemaType = $datos['datosSchema'];
-	} else {
-		$schemaType  = "Organization";
-	}
-
-	if ($datos['datosNombre']) {
-		$nombreSitio = $datos['datosNombre'];
-	} else {
-		$nombreSitio = get_bloginfo('name');
-	}
-
-	if ($datos['datosLogo']) {
-		$logoSitio = '"logo": "'.$datos['datosLogo'].'",';
-	} else {
-		$logoSitio = "";
-	}
-
-	if (is_singular("post") || is_singular("project")) {
-		echo '<script type="application/ld+json">{
-            "@context": "http://schema.org",
-            "@type": "BlogPosting",
-            "@id": "'.$urlSitio.'#blogposting",
-            "headline": "'.addslashes($descripcion).'",
-            '.$imagePostCode.'
-            "datePublished": "'.$publishedDate.'",
-            "dateModified": "'.$modifiedDate.'",
-            "author": {
-                "@type": "Person",
-                "name": "'.addslashes($autor).'"
-            },
-            "publisher": {
-                "@type": "'.$schemaType.'",
-                "name": "'.addslashes($nombreSitio).'",
-                '.$logoSitio.'
-            }
-        }</script>';
-	}
-}
-add_action('wp_head', 'jsonldBlogPosting', 5);
 
 
 /*
