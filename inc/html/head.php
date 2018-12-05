@@ -132,79 +132,27 @@ add_action('wp_head', 'openGraph', 5);
 | ------------------------------------------------------------------------------
 | Estructura de datos. Utilizamos campos ACF de "Info. Sitio".
 | - WebSite
-| - Tipo
-| - BlogPosting
 |
 */
 
 // WebSite
 // =============================================================================
 function jsonldWebSite() {
-	$nombreSitio    = "";
-	$nombreSitioAlt = "";
-	$urlSitio       = home_url('/');
+    $nombreSitio = get_bloginfo('name');
+    $descripcion = get_bloginfo('description');
+    $urlSitio    = home_url('/');
 
-	$datos = get_field('datos', 'option');
+    $thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+    $imagenURL     = $thumbnail_src[0];
+    $imagenSitio   = "";
 
-	if ($datos['datosNombre']) {
-		$nombreSitio = $datos['datosNombre'];
-	} else {
-		$nombreSitio = get_bloginfo('name');
-	}
-
-	if ($datos['datosNombreAlternativo']) {
-		$nombreSitioAlt = '"alternateName": "'.addslashes($datos['datosNombreAlternativo']).'",';
-	} else {
-		$nombreSitioAlt = "";
-	}
-
-	$redes  = "";
-
-	echo '<script type="application/ld+json">{
-        "@context": "http://schema.org/",
-        "@type": "WebSite",
-        "@id": "'.$urlSitio.'#website",
-        "url": "'.$urlSitio.'",
-        "name": "'.addslashes($nombreSitio).'",
-        '.$nombreSitioAlt.'
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "'.$urlSitio.'?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }</script>';
-}
-add_action('wp_head', 'jsonldWebSite', 5);
-
-// Tipo
-// -------------------------------------------------------------------------====
-function jsonldTipo() {
-	$schemaType  = "Organization";
-	$nombreSitio = "";
-	$urlSitio    = home_url('/');
-	$logoSitio   = "";
-
-	$datos = get_field('datos', 'option');
-
-	if ($datos['datosSchema']) {
-		$schemaType = $datos['datosSchema'];
-	} else {
-		$schemaType  = "Organization";
-	}
-
-	if ($datos['datosNombre']) {
-		$nombreSitio = $datos['datosNombre'];
-	} else {
-		$nombreSitio = get_bloginfo('name');
-	}
-
-	if ($datos['datosLogo']) {
-		$logoSitio = '"logo": "'.$datos['datosLogo']['url'].'",';
-	} else {
-		$logoSitio = "";
-	}
-
-	// 500px
+    if ($imagenURL) {
+        $imagenSitio = '"image": "'.$imagenURL.'",';
+    }
+    
+    $redes  = "";
+    
+    // 500px
     // -------------------------------------------------------------------------
     $url500px = get_field('500px', 'option');
     if (get_field('500px', 'option')) {
@@ -423,21 +371,15 @@ function jsonldTipo() {
         get_field('youtube', 'option')
     ) {
         $sameAs = '"sameAs": ['.rtrim($redes, ',').']';
+    } else {
+        $sameAs = "";
     }
 
 	// SALIDA
     // -------------------------------------------------------------------------
-	echo '<script type="application/ld+json">{
-        "@context": "http://schema.org/",
-        "@type": "'.$schemaType.'",
-        "@id": "'.$urlSitio.'#'.strtolower($schemaType).'",
-        "url": "'.$urlSitio.'",
-        "name": "'.addslashes($nombreSitio).'",
-        '.$logoSitio.'
-        '.$sameAs.'
-    }</script>';
+	echo '<script type="application/ld+json">{"@context": "http://schema.org/","@type": "WebSite","@id": "'.$urlSitio.'#website","url": "'.$urlSitio.'","name": "'.addslashes($nombreSitio).'","description": "'.$descripcion.'","potentialAction": {"@type": "SearchAction","target": "'.$urlSitio.'?s={search_term_string}","query-input": "required name=search_term_string"},'.$imagenSitio.''.$sameAs.'}</script>';
 }
-add_action('wp_head', 'jsonldTipo', 5);
+add_action('wp_head', 'jsonldWebSite', 5);
 
 
 /*
