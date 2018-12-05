@@ -1,0 +1,728 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Incògnitos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 17:49+0000\n"
+"PO-Revision-Date: 2018-12-05 18:39+0000\n"
+"Last-Translator: roger <sir.rogerforner@gmail.com>\n"
+"Language-Team: English (UK)\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.9.8"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:143
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:191
+msgid "a"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:327
+msgid "a:"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:48
+msgid "Abierto"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:96
+msgid "Aceptación (botón)"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:29 plugins/acf/fields/oPages.php:30
+msgid "Aviso legal"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:20
+msgid "Aviso web"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:241
+msgid "Añadir Cookie"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:851
+msgid "Añadir Derecho"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:743
+msgid "Añadir Destinatario"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:502
+msgid "Añadir Finalidad"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:642
+msgid "Añadir Legitimación"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:594
+msgid "Añadir Tipo Legitimación"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:582
+msgid "Base jurídica en la cual se basa el tratamiento de los datos."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:115
+msgid "Botón: color"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:130
+msgid "Botón: texto"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:49
+msgid "Cerrado"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:268
+msgid "Cerrado por"
+msgstr ""
+
+#: plugins/acf/fields/oPages/apariencia/login.php:44
+msgid "Color de fondo"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:20
+msgid "Condiciones generales"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:610
+msgid "consentimiento del interesado"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:36
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:71
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:106
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:141
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:176
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:211
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:246
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:77
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:191
+msgid "Contenido"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:125
+msgid "Contenido responsable"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookies.php:106
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:245
+msgid "Cookie"
+msgstr "Cookie"
+
+#: plugins/acf/fields/oPages.php:49
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:210
+msgid "Cookies"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:226
+msgid "Cookies utilizadas en el sitio web"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:213
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:129
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:298
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:419
+msgid "Correo electrónico"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:724
+msgid ""
+"Cuando se haya previsto ceder o comunicar, legítimamente, los datos "
+"personales que se recogen, se informará acerca de la identidad de los "
+"destinatarios.\n"
+"\t<hr>\n"
+"\t<strong>Los destinatarios pueden ser</strong>:\n"
+"\t<ol>\n"
+"\t<li>Empresas a las cuales se les contrate un servicio de alojamiento web, "
+"bases de datos, etc.</li>\n"
+"\t<li>Empresas a las cuales se les contrate un servicio de análisis web, "
+"publicidad, etc.</li>\n"
+"\t<li>Cualquier empresa a la que se le contrate un servicio a través del "
+"cual, sea de forma digital o física, se le proporcionen los datos de los "
+"usuarios.</li>\n"
+"\t</ol>"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:613
+msgid "cumplimiento de una obligación legal"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:209
+msgid ""
+"Dado que el/la responsable reside fuera de la Unión Europea le presentamos "
+"nuestro/a representante dentro de ésta."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:326
+msgid "Datos de contacto del Delegado de Protección de Datos"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:149
+msgid "Datos de contacto del Representante"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:36
+msgid "Datos de contacto del Responsable"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:119
+msgid "de"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:310
+msgid "de:"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:855
+msgid "Derecho a"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:169
+#: plugins/acf/fields/oPages/legal/rgpd.php:460
+msgid "Derecho a la portabilidad de los datos"
+msgstr "Right to data portability"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:166
+#: plugins/acf/fields/oPages/legal/rgpd.php:457
+msgid "Derecho a oponerse al tratamiento"
+msgstr "Right to object to treatment"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:157
+#: plugins/acf/fields/oPages/legal/rgpd.php:448
+msgid ""
+"Derecho a solicitar el acceso a los datos personales relativos al interesado"
+msgstr ""
+"Right to request access to personal data concerning the interested party"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:163
+#: plugins/acf/fields/oPages/legal/rgpd.php:454
+msgid "Derecho a solicitar la limitación de su tratamiento"
+msgstr "Right to request the limitation of your treatment"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:160
+#: plugins/acf/fields/oPages/legal/rgpd.php:451
+msgid "Derecho a solicitar su rectificación o supresión"
+msgstr "Right to request rectification or deletion"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:143
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:803
+msgid "Derechos"
+msgstr "Rights"
+
+#: plugins/acf/fields/oPages/legal/cookies.php:109
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:302
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:525
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:665
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:782
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:884
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:938
+msgid "Descripción"
+msgstr "Description"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:123
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:688
+msgid "Destinatarios"
+msgstr "Recipients"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:211
+msgid "Dir. Postal"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:89
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:242
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:392
+msgid "Dirección postal"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:72
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:105
+msgid "Domingo"
+msgstr "Sunday"
+
+#: plugins/acf/fields/oPages/legal/cookies.php:108
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:283
+msgid "Duración"
+msgstr "Duration"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:87
+msgid "Día de la semana"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:611
+msgid "ejecución de un contrato"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:474
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:573
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:715
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:830
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:932
+msgid ""
+"El <em>Reglamento General de Protección de Datos</em> aclara que la "
+"información proporcionada debe utilizar un lenguaje claro, conciso y "
+"comprensible, evitándose el abuso de citas legales, \"jerga\" confusa, o "
+"términos ambiguos con escaso sentido para las personas destinatarias."
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"El objetivo de este tema es ampliar las funcionalidades de Divi sin la "
+"necesidad de tocar la estructura principal de este."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:341
+msgid "El responsable hace el papel del DPD?"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:164
+msgid "El responsable reside fuera de la Unión Europea?"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:36
+msgid "Estado"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:90
+msgid "Exclusión de garantías y responsabilidad"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:66
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:447
+msgid "Finalidad"
+msgstr "Purpose"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:20
+msgid "Horario"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:60
+msgid "Horario laboral"
+msgstr ""
+
+#. URI of the theme
+msgid "http://ilercapp.com"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://rogerforner.com"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:70
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:215
+msgid "ID"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:210
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:51
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:188
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:365
+msgid "Identidad"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:73
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:218
+msgid "Identificador. Por ejemplo el NIF o el NIE o el CIF o etc."
+msgstr ""
+
+#: plugins/acf/fields/oPages/apariencia/login.php:59
+msgid "Imagen de fondo"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:463
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:562
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:704
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:819
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:921
+msgid "Importante"
+msgstr ""
+
+#. Name of the theme
+msgid "Incògnitos"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:58
+msgid "Info. Sitio"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:80
+msgid ""
+"Informa al visitante del sitio web sobre la utilización de cookies. Se breve "
+"dado que la información extensa se encuentra en la página de la \"Política "
+"de Cookies\"."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:175
+msgid "Información"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:57
+msgid "Información general del sitio web"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:99
+msgid ""
+"Inserta un texto mediante el cual se de a entender la aceptación de la "
+"información ofrecida a través del pop-up."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:61
+msgid ""
+"Inserta un texto que incite a visitar la página de la \"Política de "
+"Cookies\"."
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:83
+msgid "Insertar día"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:612
+msgid "Interés legítimo del Responsable, o de un tercero"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:63
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:102
+msgid "Jueves"
+msgstr "Thursday"
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:871
+msgid "la portabilidad de los datos"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:941
+msgid ""
+"La procedencia de los datos únicamente habrá de incluirse en el supuesto de "
+"que los datos personales no se hayan obtenido del interesado, por proceder "
+"de alguna cesión legítima, o de fuentes de acceso público.\n"
+"\t<hr>\n"
+"\t<strong>Los medios desde los que se hayan obtenido los datos pueden "
+"ser</strong>:\n"
+"\t<ol>\n"
+"\t<li>Correo postal.</li>\n"
+"\t<li>Correo electrónico.</li>\n"
+"\t<li>Mensajería instantánea.</li>\n"
+"\t<li>Entre otros.</li>\n"
+"\t</ol>"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:16
+msgid "Legal - Aviso legal"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:16
+msgid "Legal - Cookies"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:16
+msgid "Legal - RGPD"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:86
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:546
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:627
+msgid "Legitimación"
+msgstr "Legitimation"
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:598
+msgid "Legitimación por"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:100
+#: plugins/acf/fields/oPages/legal/rgpd.php:349
+msgid "Legitimación por consentimiento del interesado"
+msgstr "Legitimization by consent of the interested party"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:109
+#: plugins/acf/fields/oPages/legal/rgpd.php:358
+msgid "Legitimación por cumplimiento de una obligación legal"
+msgstr "Legitimization for compliance with a legal obligation"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:103
+#: plugins/acf/fields/oPages/legal/rgpd.php:352
+msgid "Legitimación por ejecución de un contrato"
+msgstr "Legitimization for the execution of a contract"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:106
+#: plugins/acf/fields/oPages/legal/rgpd.php:355
+msgid "Legitimación por Interés legítimo del Responsable, o de un tercero"
+msgstr ""
+"Legitimization by legitimate interest of the Responsible, or a third party"
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:112
+#: plugins/acf/fields/oPages/legal/rgpd.php:361
+msgid ""
+"Legitimación por misión en Interés público o ejercicio de Poderes Públicos"
+msgstr ""
+"Legitimization by mission in public interest or exercise of public powers"
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:55
+msgid "Ley aplicable y jurisdicción"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:160
+msgid "Links o hiperenlaces"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:480
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:579
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:721
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:836
+msgid "Listado"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:107
+msgid "Lo he entendido"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:70
+#: plugins/acf/fields/oPages/apariencia/login.php:16
+msgid "Login"
+msgstr ""
+
+#: plugins/acf/fields/oPages/apariencia/login.php:20
+msgid "Logo"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:483
+msgid ""
+"Los datos serán recogidos exclusivamente para fines determinados, explícitos "
+"y legítimos, y no serán tratados ulteriormente de manera incompatible con "
+"dichos fines.\n"
+"\t<hr>\n"
+"\t<strong>Constará de</strong>:\n"
+"\t<ol>\n"
+"\t<li>Descripción de los fines del tratamiento.</li>\n"
+"\t<li>Plazos o criterios de conservación de los datos.</li>\n"
+"\t<li>Decisiones automatizadas, perfiles y lógica aplicada.</li>\n"
+"\t</ol>"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:54
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:99
+msgid "Lunes"
+msgstr "Monday"
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:57
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:100
+msgid "Martes"
+msgstr "Tuesday"
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:614
+msgid "misión en Interés público o ejercicio de Poderes Públicos"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:60
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:101
+msgid "Miércoles"
+msgstr "Wednesday"
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:177
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:354
+msgid "No"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:747
+msgid "Nombre"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:54
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:191
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:368
+msgid "Nombre completo."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:870
+msgid "oponerse al tratamiento"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:329
+msgid ""
+"Persona/Empresa responsable de informar, asesorar, supervisar y cooperar con "
+"la autoridad de control, así como ser el punto de contacto para los/las "
+"interesados/das."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:152
+msgid ""
+"Persona/Empresa responsable del tratamiento de los datos dentro de la Unión "
+"Europea; en el caso de que el <strong>Responsable</strong> resida fuera de "
+"ésta."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:39
+msgid "Persona/Empresa responsable del tratamiento de los datos."
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:69
+msgid "Personalizar la página de Inicio de Sesión"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:48
+msgid "Política de Cookies"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:145
+msgid "Pop-up: color"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:160
+msgid "Pop-up: texto"
+msgstr ""
+
+#: plugins/acf/fields/oPages/apariencia/login.php:23
+msgid "Por defecto, se utiliza el <em>favicon</em>."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:905
+msgid "Procedencia"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:230
+msgid "Propiedad intelectual e industrial"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:36
+msgid "Página (enlace)"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:346
+msgid "Redes Sociales"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:40
+msgid "Reglamento General de Protección de Datos"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:53
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:20
+msgid "Responsable"
+msgstr "Responsable"
+
+#: plugins/acf/fields/oPages/legal/avisoLegalPagina.php:195
+msgid "Restricciones del uso del dominio y subdominios"
+msgstr ""
+
+#: plugins/acf/fields/oPages.php:41
+msgid "RGPD"
+msgstr ""
+
+#. Author of the theme
+msgid "Roger Forner Fabre"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:69
+msgid "Saber más"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:839
+msgid ""
+"Se deberá ofrecer la información sobre los derechos que le asisten a las "
+"personas interesadas, en relación con el Responsable, de acuerdo con el RGPD."
+msgstr ""
+"The information about the rights that assist the interested persons should "
+"be offered, in relation to the Responsible, in accordance with the RGPD."
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:39
+msgid ""
+"Selecciona la página de la \"Política de Cookies\" para poder enlazar hacia "
+"ésta."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:167
+msgid ""
+"Si la persona/empresa reside fuera de la Unión Europea es necesario un/na "
+"representante que resida en ésta."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:867
+msgid "solicitar el acceso a los datos personales relativos al interesado"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:869
+msgid "solicitar la limitación de su tratamiento"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:868
+msgid "solicitar su rectificación o supresión"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:69
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:104
+msgid "Sábado"
+msgstr "Saturday"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:227
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:176
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:353
+msgid "Sí"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:212
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:108
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:269
+msgid "Teléfono"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:58
+msgid "Texto del enlace"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookies.php:107
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:264
+msgid "Tipo"
+msgstr "Type"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:291
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:506
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:646
+msgid "Título"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:766
+msgid "URL del sitio web del/la destinatario/ria"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:111
+#: plugins/acf/fields/oPages/legal/rgpdPagina.php:272
+msgid ""
+"Utilice el <a target=\"_blank\" rel=\"nofollow noopener noreferrer\" "
+"href=\"https://es.wikipedia.org/wiki/Anexo:"
+"Prefijos_telef%C3%B3nicos_mundiales\">prefijo telefónico</a> (+)."
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/cookiesPagina.php:88
+msgid ""
+"Utilizamos cookies propias y de terceros para ofrecerle un mejor servicio. "
+"Si continúa navegando asumimos que acepta su uso."
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneral.php:66
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:103
+msgid "Viernes"
+msgstr "Friday"
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:167
+msgid "y de"
+msgstr ""
+
+#: plugins/acf/fields/oPages/info/infoGeneralPagina.php:215
+msgid "¿Cerrado?"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:208
+msgid "¿Quién es el/la Delegado de Protección de Datos (DPD)?"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:207
+msgid "¿Quién es el/la representante?"
+msgstr ""
+
+#: plugins/acf/fields/oPages/legal/rgpd.php:206
+msgid "¿Quién es el/la responsable del sitio web?"
+msgstr ""

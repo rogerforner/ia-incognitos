@@ -17,7 +17,7 @@ if( function_exists('acf_add_local_field_group') ):
         'fields' => array(
             array(
                 'key' => 'field_5b7593c4ac9fe',
-                'label' => 'Horario',
+                'label' => __('Horario', 'incognitos'),
                 'name' => '',
                 'type' => 'tab',
                 'instructions' => '',
@@ -33,7 +33,7 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             array(
                 'key' => 'field_5b759aeecfe40',
-                'label' => 'Estado',
+                'label' => __('Estado', 'incognitos'),
                 'name' => 'infoHorarioEstado',
                 'type' => 'radio',
                 'instructions' => '',
@@ -45,8 +45,8 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'abierto' => 'Abierto',
-                    'cerrado' => 'Cerrado',
+                    'abierto' => __('Abierto', 'incognitos'),
+                    'cerrado' => __('Cerrado', 'incognitos'),
                 ),
                 'allow_null' => 0,
                 'other_choice' => 0,
@@ -57,7 +57,7 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             array(
                 'key' => 'field_5b7595e9fae15',
-                'label' => 'Horario laboral',
+                'label' => __('Horario laboral', 'incognitos'),
                 'name' => 'infoHorarioGeneral',
                 'type' => 'repeater',
                 'instructions' => '',
@@ -80,11 +80,11 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 7,
                 'layout' => 'block',
-                'button_label' => 'Insertar día',
+                'button_label' => __('Insertar día', 'incognitos'),
                 'sub_fields' => array(
                     array(
                         'key' => 'field_5b75964efae16',
-                        'label' => 'Día de la semana',
+                        'label' => __('Día de la semana', 'incognitos'),
                         'name' => 'generalDia',
                         'type' => 'select',
                         'instructions' => '',
@@ -96,13 +96,13 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'choices' => array(
-                            'lunes' => 'Lunes',
-                            'martes' => 'Martes',
-                            'miercoles' => 'Miércoles',
-                            'jueves' => 'Jueves',
-                            'viernes' => 'Viernes',
-                            'sabado' => 'Sábado',
-                            'domingo' => 'Domingo',
+                            'lunes' => __('Lunes', 'incognitos'),
+                            'martes' => __('Martes', 'incognitos'),
+                            'miercoles' => __('Miércoles', 'incognitos'),
+                            'jueves' => __('Jueves', 'incognitos'),
+                            'viernes' => __('Viernes', 'incognitos'),
+                            'sabado' => __('Sábado', 'incognitos'),
+                            'domingo' => __('Domingo', 'incognitos'),
                         ),
                         'default_value' => array(
                             0 => 'lunes',
@@ -116,7 +116,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5b7596f4fae17',
-                        'label' => 'de',
+                        'label' => __('de', 'incognitos'),
                         'name' => 'generalDeHora',
                         'type' => 'time_picker',
                         'instructions' => '',
@@ -140,7 +140,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5b759735fae18',
-                        'label' => 'a',
+                        'label' => __('a', 'incognitos'),
                         'name' => 'generalAHora',
                         'type' => 'time_picker',
                         'instructions' => '',
@@ -164,7 +164,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5bb7832e22a53',
-                        'label' => 'y de',
+                        'label' => __('y de', 'incognitos'),
                         'name' => 'generalDeHoraTarde',
                         'type' => 'time_picker',
                         'instructions' => '',
@@ -188,7 +188,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5bb7833a22a54',
-                        'label' => 'a',
+                        'label' => __('a', 'incognitos'),
                         'name' => 'generalAHoraTarde',
                         'type' => 'time_picker',
                         'instructions' => '',
@@ -212,7 +212,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5b759e1520d08',
-                        'label' => '¿Cerrado?',
+                        'label' => __('¿Cerrado?', 'incognitos'),
                         'name' => 'generalCerrado',
                         'type' => 'checkbox',
                         'instructions' => '',
@@ -224,7 +224,7 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'choices' => array(
-                            'true' => 'Sí',
+                            'true' => __('Sí', 'incognitos'),
                         ),
                         'allow_custom' => 0,
                         'default_value' => array(
@@ -265,7 +265,7 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             array(
                 'key' => 'field_5b759cccbe7bc',
-                'label' => 'Cerrado por',
+                'label' => __('Cerrado por', 'incognitos'),
                 'name' => 'infoHorarioCerrado',
                 'type' => 'group',
                 'instructions' => '',
@@ -288,7 +288,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'sub_fields' => array(
                     array(
                         'key' => 'field_5b759904a841f',
-                        'label' => 'Título',
+                        'label' => __('Título', 'incognitos'),
                         'name' => 'cerradoTitulo',
                         'type' => 'text',
                         'instructions' => '',
@@ -307,7 +307,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5b759904a8420',
-                        'label' => 'de:',
+                        'label' => __('de:', 'incognitos'),
                         'name' => 'cerradoDe',
                         'type' => 'date_picker',
                         'instructions' => '',
@@ -324,7 +324,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5b759904a8421',
-                        'label' => 'a:',
+                        'label' => __('a:', 'incognitos'),
                         'name' => 'cerradoA',
                         'type' => 'date_picker',
                         'instructions' => '',
@@ -343,7 +343,7 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             array(
                 'key' => 'field_5b759408ac9ff',
-                'label' => 'Redes Sociales',
+                'label' => __('Redes Sociales', 'incognitos'),
                 'name' => '',
                 'type' => 'tab',
                 'instructions' => '',
