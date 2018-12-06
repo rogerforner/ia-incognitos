@@ -53,9 +53,28 @@ add_filter('acf/settings/show_admin', 'acfMenuCapability');
 
 /*
 | ------------------------------------------------------------------------------
+| Localización
+| ------------------------------------------------------------------------------
+| Insertar funciones de localización en la exportación.
+|
+*/
+
+function custom_acf_settings_localization($localization){
+    return true;
+}
+add_filter('acf/settings/l10n', 'custom_acf_settings_localization');
+
+function custom_acf_settings_textdomain($domain){
+    return 'incognitos';
+}
+add_filter('acf/settings/l10n_textdomain', 'custom_acf_settings_textdomain');
+
+/*
+| ------------------------------------------------------------------------------
 | Instanciar
 | ------------------------------------------------------------------------------
 | Instanciar ACF.
 |
 */
+
 include_once(get_stylesheet_directory() . '/plugins/acf/advanced-custom-fields-pro/acf.php');
