@@ -35,8 +35,9 @@ require_once get_stylesheet_directory() . '/inc/init.php';
 
 // ACF Pro
 // =============================================================================
-require_once get_stylesheet_directory() . '/plugins/acf/init.php';
+// require_once get_stylesheet_directory() . '/plugins/acf/init.php';
 require_once get_stylesheet_directory() . '/plugins/acf/fields/oPages.php';
+require_once get_stylesheet_directory() . '/plugins/acf/localization/init.php';
 
 /*
 | ------------------------------------------------------------------------------
