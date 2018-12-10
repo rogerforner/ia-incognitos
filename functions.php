@@ -29,7 +29,7 @@ require_once get_stylesheet_directory() . '/inc/init.php';
 | plugins para su correcto funcionamiento.
 | Los plugins utilizados son:
 | - ACF Pro
-|   - Informar por la dependencia de ACF Pro.
+| -- Informar por la dependencia de ACF Pro.
 |
 */
 
@@ -43,20 +43,31 @@ require_once get_stylesheet_directory() . '/plugins/acf/fields/oPages.php';
 | Configuración del tema
 | ------------------------------------------------------------------------------
 | Código utilizado para personalizar WordPress.
-| - Panel de administración
+| - Páginas
+| -- Panel de administración
+| -- Login
 | - HTML
+| -- WordPress (limpiar)
+| -- Feed
+| -- SEO
 | - Shortcodes
 |
 */
 
-// Panel de administración
+// Páginas
 // =============================================================================
-require_once get_stylesheet_directory() . '/inc/aPanel.php';
+require_once get_stylesheet_directory() . '/inc/pages/aPanel.php';
+require_once get_stylesheet_directory() . '/inc/pages/login.php';
 
 // HTML
 // =============================================================================
-require_once get_stylesheet_directory() . '/inc/html/head.php';
-require_once get_stylesheet_directory() . '/inc/html/login.php';
+require_once get_stylesheet_directory() . '/inc/html/wordpress.php';
+require_once get_stylesheet_directory() . '/inc/html/feed.php';
+
+if (!class_exists('Rank_Math_Bootstrap')) {
+    require_once get_stylesheet_directory() . '/inc/html/seoTags.php';
+    require_once get_stylesheet_directory() . '/inc/html/seoJson.php';
+}
 
 // Shortcodes
 // =============================================================================
