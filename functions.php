@@ -64,11 +64,8 @@ require_once get_stylesheet_directory() . '/inc/pages/login.php';
 // =============================================================================
 require_once get_stylesheet_directory() . '/inc/html/wordpress.php';
 require_once get_stylesheet_directory() . '/inc/html/feed.php';
-
-if (!class_exists('Rank_Math_Bootstrap')) {
-    require_once get_stylesheet_directory() . '/inc/html/seoTags.php';
-    require_once get_stylesheet_directory() . '/inc/html/seoJson.php';
-}
+require_once get_stylesheet_directory() . '/inc/html/seoTags.php';
+require_once get_stylesheet_directory() . '/inc/html/seoJson.php';
 
 // Shortcodes
 // =============================================================================
