@@ -1,5 +1,3 @@
-<!-- TOC -->autoauto- [Incògnitos](#incògnitos)auto    - [Descargar](#descargar)auto    - [Tema padre](#tema-padre)auto    - [Plugins](#plugins)auto        - [ACF Pro](#acf-pro)auto            - [Útil](#útil)auto- [Requisitos](#requisitos)auto- [Mostrar datos](#mostrar-datos)auto    - [Textos legales (shortcodes)](#textos-legales-shortcodes)auto        - [Aviso legal](#aviso-legal)auto        - [RGPD: Reglamento General de Protección de Datos](#rgpd-reglamento-general-de-protección-de-datos)auto        - [Política de Cookies](#política-de-cookies)auto    - [Horario Laboral](#horario-laboral)auto- [Roles y Permisos](#roles-y-permisos)auto    - [Permisos (capabilities)](#permisos-capabilities)autoauto<!-- /TOC -->
-
 # Incògnitos
 
 Incògnitos es un _tema hijo_ de WordPress.org con el que se pretende ampliar las funcionalidades de Divi, el _tema padre_, sin la necesidad de tocar la estructura principal de éste.
