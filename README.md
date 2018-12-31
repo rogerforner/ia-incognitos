@@ -1,21 +1,4 @@
-<!-- TOC -->
-
-- [Incògnitos](#incògnitos)
-    - [Tema padre](#tema-padre)
-    - [Plugins](#plugins)
-        - [ACF Pro](#acf-pro)
-            - [Útil](#Útil)
-- [Requisitos](#requisitos)
-- [Mostrar datos](#mostrar-datos)
-    - [Textos legales (shortcodes)](#textos-legales-shortcodes)
-        - [Aviso legal](#aviso-legal)
-        - [RGPD: Reglamento General de Protección de Datos](#rgpd-reglamento-general-de-protección-de-datos)
-        - [Política de Cookies](#política-de-cookies)
-    - [Horario Laboral](#horario-laboral)
-- [Roles y Permisos](#roles-y-permisos)
-    - [Permisos (capabilities)](#permisos-capabilities)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Incògnitos](#incògnitos)auto    - [Descargar](#descargar)auto    - [Tema padre](#tema-padre)auto    - [Plugins](#plugins)auto        - [ACF Pro](#acf-pro)auto            - [Útil](#útil)auto- [Requisitos](#requisitos)auto- [Mostrar datos](#mostrar-datos)auto    - [Textos legales (shortcodes)](#textos-legales-shortcodes)auto        - [Aviso legal](#aviso-legal)auto        - [RGPD: Reglamento General de Protección de Datos](#rgpd-reglamento-general-de-protección-de-datos)auto        - [Política de Cookies](#política-de-cookies)auto    - [Horario Laboral](#horario-laboral)auto- [Roles y Permisos](#roles-y-permisos)auto    - [Permisos (capabilities)](#permisos-capabilities)autoauto<!-- /TOC -->
 
 # Incògnitos
 
@@ -24,6 +7,12 @@ Incògnitos es un _tema hijo_ de WordPress.org con el que se pretende ampliar la
 > Incògnitos se distribuye bajo los términos de la licencia MIT, ésta compatible con la GNU GPL.
 
 _Ah sí! Incògnitos es el nombre de mi compañero felino._ :P
+
+## Descargar
+
+```
+$ git clone https://github.com/rogerforner/IlercApp-Incognitos.git incognitos
+```
 
 ## Tema padre
 
