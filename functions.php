@@ -51,9 +51,6 @@ require_once get_stylesheet_directory() . '/plugins/acf/localization/init.php';
 | -- WordPress (limpiar)
 | -- Feed
 | -- SEO
-| - Imágenes
-| -- Etiquetas
-| -- Categorías
 | - Shortcodes
 |
 */
@@ -71,11 +68,6 @@ if (!class_exists('WPSEO_Options')) {
     require_once get_stylesheet_directory() . '/inc/html/seoTags.php';
     require_once get_stylesheet_directory() . '/inc/html/seoJson.php';
 }
-
-// Imágenes
-// =============================================================================
-require_once get_stylesheet_directory() . '/inc/images/tags.php';
-require_once get_stylesheet_directory() . '/inc/images/categories.php';
 
 // Shortcodes
 // =============================================================================
