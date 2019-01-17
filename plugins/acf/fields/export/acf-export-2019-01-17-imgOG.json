@@ -1,0 +1,63 @@
+[
+    {
+        "key": "group_5c4097d874eb2",
+        "title": "Imagen Open Graph",
+        "fields": [
+            {
+                "key": "field_5c40989b8c496",
+                "label": "",
+                "name": "og_imagen",
+                "type": "image",
+                "instructions": "Imagen que se mostrará en las Redes Sociales. Por defecto se utiliza la imagen destacada.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 600,
+                "min_height": 315,
+                "min_size": "",
+                "max_width": 1200,
+                "max_height": 630,
+                "max_size": "",
+                "mime_types": ".jpg, .png, .gif"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "project"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
