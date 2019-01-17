@@ -50,6 +50,7 @@ require_once get_stylesheet_directory() . '/plugins/acf/localization/init.php';
 | - Páginas
 | -- Panel de administración
 | -- Login
+| - CPT
 | - HTML
 | -- WordPress (limpiar)
 | -- Feed
@@ -62,6 +63,10 @@ require_once get_stylesheet_directory() . '/plugins/acf/localization/init.php';
 // =============================================================================
 require_once get_stylesheet_directory() . '/inc/pages/aPanel.php';
 require_once get_stylesheet_directory() . '/inc/pages/login.php';
+
+// CPT
+// =============================================================================
+require_once get_stylesheet_directory() . '/inc/cpt/excerpt.php';
 
 // HTML
 // =============================================================================
