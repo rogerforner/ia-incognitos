@@ -37,6 +37,9 @@ require_once get_stylesheet_directory() . '/inc/init.php';
 // =============================================================================
 require_once get_stylesheet_directory() . '/plugins/acf/init.php';
 require_once get_stylesheet_directory() . '/plugins/acf/fields/oPages.php';
+if (!class_exists('WPSEO_Options')) {
+    require_once get_stylesheet_directory() . '/plugins/acf/fields/posts/seo.php';
+}
 require_once get_stylesheet_directory() . '/plugins/acf/localization/init.php';
 
 /*

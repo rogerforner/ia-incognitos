@@ -38,14 +38,22 @@ function openGraph() {
 	// Obtener la imagen.
 	// =========================================================================
 	$thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
-	$imagen        = $thumbnail_src[0];
+	$imagen        = '';
+
+	if (get_field('og_imagen', $post->ID)) {
+		$imagen = get_field('og_imagen', $post->ID);
+	} elseif ($thumbnail_src[0]) {
+		$imagen = $thumbnail_src[0];
+	} else {
+		$imagen = get_site_icon_url();
+	}
 
 	// Obtener la taxonmía que represente las etiquetas.
 	// =========================================================================
-	if (is_singular("post")) {
-		$etiquetas = get_the_terms($post->ID, "post_tag");
-	} elseif (is_singular("project")) {
-		$etiquetas = get_the_terms($post->ID, "project_tag");
+	if (is_singular('post')) {
+		$etiquetas = get_the_terms($post->ID, 'post_tag');
+	} elseif (is_singular('project')) {
+		$etiquetas = get_the_terms($post->ID, 'project_tag');
 	}
 
 	// MOSTRAR DATOS
