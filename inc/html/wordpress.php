@@ -13,7 +13,7 @@
 // Por defecto se inserta la versión.
 // =============================================================================
 function webQuitarMetaVersion() {
-    $miTema = wp_get_theme();
+  $miTema = wp_get_theme();
 	return '<meta name="generator" content="'. $miTema->get("Name") .' v'. $miTema->get("Version") .', by Roger Forner Fabre" />';
 }
 add_filter('the_generator', 'webQuitarMetaVersion');

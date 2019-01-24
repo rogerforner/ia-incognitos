@@ -89,6 +89,13 @@ function openGraph() {
 	<meta name="twitter:description" content="'.$descripcion.'"/>
 	<meta name="twitter:image:src" content="'.$imagen.'">
 	<meta name="twitter:card" content="summary_large_image"/>
-	';
+  ';
+  
+  // Meta Robots
+  if (is_404() || is_archive() || is_search() || is_paged() || is_attachment()) {
+    echo '<meta name="robots" content="noindex,follow">';
+  } else {
+    echo '<meta name="robots" content="index,follow">';
+  }
 }
 add_action('wp_head', 'openGraph', 5);
