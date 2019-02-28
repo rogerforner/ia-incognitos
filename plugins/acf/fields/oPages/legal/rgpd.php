@@ -44,9 +44,10 @@ function shortRgpdInfoBasica() {
 	$salida = "";
 	
 	// Iniciamos la tabla...
-	$salida .= "
+  $salida .= '
+  <div style="overflow-x:auto;">
 		<table>
-	";
+	';
 
 	// Responsable.
 	// =========================================================================
@@ -178,7 +179,8 @@ function shortRgpdInfoBasica() {
 
 	// Cerramos la tabla.
 	$salida .= "
-		</table>
+    </table>
+  </div>
 	";
 
 	return $salida;

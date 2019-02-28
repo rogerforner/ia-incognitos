@@ -111,7 +111,8 @@ function shortCookiesUtilizadas() {
 	// Campo Repeater (ACF).
 	if (have_rows('cookiesUtilizadas', 'option')) {
 		// Inicio de la tabla...
-		$salida .= "
+    $salida .= '
+    <div style="overflow-x:auto;">
 			<table>
 				<tr>
 					<th>$cookieTxt</th>
@@ -119,7 +120,7 @@ function shortCookiesUtilizadas() {
 					<th>$duracionTxt</th>
 					<th>$descTxt</th>
 				</tr>
-		";
+		';
 
 		while (have_rows('cookiesUtilizadas', 'option')) {
 			the_row();
@@ -141,7 +142,10 @@ function shortCookiesUtilizadas() {
 		}
 
 		// Final de la tabla.
-		$salida .= "</table>";
+    $salida .= "
+      </table>
+    </div>
+    ";
 	}
 
 	return $salida;

@@ -40,7 +40,7 @@ function shortInfoHorarioGeneral() {
 
     if (get_field('infoHorarioEstado', 'option') == 'abierto') { // Abierto...
         if (have_rows('infoHorarioGeneral', 'option')) {
-            $salida .= '<table class="horarioLaboral">';
+            $salida .= '<div style="overflow-x:auto;"><table class="horarioLaboral">';
 
             while (have_rows('infoHorarioGeneral', 'option')) {
                 the_row();
@@ -101,11 +101,11 @@ function shortInfoHorarioGeneral() {
                 ';
             }
 
-            $salida .= '</table>';
+            $salida .= '</table></div>';
         }
     } else { // Cerrado...
         if (have_rows('infoHorarioGeneral', 'option')) {
-            $salida .= '<table class="horarioCerrado">';
+            $salida .= '<div style="overflow-x:auto;"><table class="horarioCerrado">';
 
             while (have_rows('infoHorarioCerrado', 'option')) {
                 the_row();
@@ -127,7 +127,7 @@ function shortInfoHorarioGeneral() {
                 ';
             }
 
-            $salida .= '</table>';
+            $salida .= '</table></div>';
         }
     }
 
