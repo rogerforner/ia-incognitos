@@ -47,9 +47,10 @@ function cookiesAvisoWeb() {
 	$popupColorTxt = get_field('cookiesPopupColorTxt', 'option');
 
     echo '
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <style>.cc-banner.cc-bottom {z-index:999999;}</style>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+
     <script>
     window.addEventListener("load", function() {
     window.cookieconsent.initialise({
