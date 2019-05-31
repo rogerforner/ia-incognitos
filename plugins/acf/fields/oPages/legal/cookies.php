@@ -49,9 +49,9 @@ function cookiesAvisoWeb() {
     echo '
     <style>.cc-banner.cc-bottom {z-index:999999;}</style>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" defer></script>
 
-    <script>
+    <script type="text/javascript">
     window.addEventListener("load", function() {
     window.cookieconsent.initialise({
       "palette": {
